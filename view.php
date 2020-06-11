@@ -11,7 +11,7 @@ if(!$conn)
   die("Error connection: ".sqlsrv_errors());
 }
 
-$tsql= "SELECT * FROM [dbo].[restaurant]";
+$sql= "SELECT * FROM [dbo].[restaurant]";
  $getResults= sqlsrv_query($conn, $sql);
 
 if ($getResults == FALSE)
